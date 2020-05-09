@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cino.glitch.me/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cino.glitch.me/css/main.css">
+    <link rel="stylesheet" href="https://cino.glitch.me/css/now-ui-kit.css">
+    <link rel="stylesheet" href="https://cino.glitch.me/css/table.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Author" content="https://cinobot.xyz/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="If you want a good moderation bot, you can use Cino Bot!" />
+    <meta property="og:title" content="A multipurpose bot!" />
+    <meta property="og:type" content="website" />
+    <meta name="keywords" content="discord.js, discord bot, discord turkey, discord türkiye, discordapi, discordbots, discord bots, top.gg, topgg, discord english, discord tr, discord en, discord moderation bot">
+    <meta property="og:url" content="https://cinobot.xyz/" />
+    <meta property="og:description" content="If you want a good moderation bot, you can use Cino Bot!" />
+    <meta property="og:image" content="https://cdn.discordapp.com/avatars/702662232873500767/40780847d1665754683eab5124b1a935.webp"/>
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/702662232873500767/40780847d1665754683eab5124b1a935.webp" type="image/x-icon" />
+    <meta property="og:locale" content="en_US">
+    <title>Cino Bot</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark" style="background-color:transparent !important;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="/" style="margin-left: 100px;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="/add">Add Bot</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="/commands">Commands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="/dashboard">Dashboard</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-auto" style="margin-left: 400px;">
+          
+            <a class="nav-linkk nav-linkk-ltr" href="/login">LOGIN</a>
+          
+        </li>
+      </ul>
+    </div>
+</nav>
+
+
+<br><br>
+<h1 class="display-5 title text-white">Command Table.</h1>
+
+<div class="jumbotron" style="background-color:transparent" align="center">
+
+    
+    <div class="commands-button" id="commands-button-1" onclick="y(event, 'Staff')">
+      <div id="underline" onclick="y(event, 'Staff')"></div>
+      <a>Staff</a>
+    </div>
+  
+    
+    <div class="commands-button" id="commands-button-1" onclick="y(event, 'Fun')">
+      <div id="underline" onclick="y(event, 'Fun')"></div>
+      <a>Fun</a>
+    </div>
+  
+    
+    <div class="commands-button" id="commands-button-1" onclick="y(event, 'System')">
+      <div id="underline" onclick="y(event, 'System')"></div>
+      <a>System</a>
+    </div>
+  
+    
+    <div class="commands-button" id="commands-button-1" onclick="y(event, 'Giveaway System')">
+      <div id="underline" onclick="y(event, 'Giveaway System')"></div>
+      <a>Giveaway System</a>
+    </div>
+  
+    
+    <div class="commands-button" id="commands-button-1" onclick="y(event, 'General')">
+      <div id="underline" onclick="y(event, 'General')"></div>
+      <a>General</a>
+    </div>
+  
+    
+    <div class="commands-button" id="commands-button-1" onclick="y(event, 'Invite System')">
+      <div id="underline" onclick="y(event, 'Invite System')"></div>
+      <a>Invite System</a>
+    </div>
+  
+</div>
+
+<div id="starting" class="sex" style="display: block;">
+  <div class="jumbotron" style="background-color:transparent" align="center">
+      <h1 class="display-5 title text-white">Welcome</h1>
+      <br>
+      <h3 class="text-center text-white">You can see all commands from the top bars.</h3>
+  </div>
+</div>
+
+
+  
+  <div id="Staff" class="sex">
+    <div class="jumbotron" style="background-color:transparent" align="center">
+      <h1 class="display-5 title text-white">Staff Commands</h1>
+      <br>
+      <table id="Staff" class="text-white">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Usage</th>
+          <th>Cooldown</th>
+        </tr>
+      
+        
+        <tr>
+          <td>ban</td>
+          <td>You&#39;re bans the entered member.</td>
+          <td>?ban [member/name] [&lt;reason&gt;]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>kick</td>
+          <td>You&#39;re kicks the entered member.</td>
+          <td>?kick [member/name] [&lt;reason&gt;]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>mute</td>
+          <td>You&#39;re mutes the entered member.</td>
+          <td>?mute [member/name] [&lt;reason&gt;]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>punish</td>
+          <td>You&#39;re punishs the entered member.</td>
+          <td>?punish [member/name] [time] [&lt;reason&gt;]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>remove-warn</td>
+          <td>You&#39;re removes a warn of the entered member.</td>
+          <td>?remove-warn [member/name] [warn code]</td>
+          <td>3 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>role</td>
+          <td>You&#39;re gives or takes the entered role from entered member. You can add multiple roles, split them with &#34;,&#34; It&#39;s only for adding roles to member.</td>
+          <td>?role [add/remove/removeall/humans/bots] [&lt;member/name&gt;] [role]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>set</td>
+          <td>You&#39;re sets the configuration.</td>
+          <td>?set [set/remove] [option] [variable]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>temp-mute</td>
+          <td>You&#39;re temps mute the entered member.</td>
+          <td>?temp-mute [member/name] [time] [&lt;reason&gt;]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>unmute</td>
+          <td>You&#39;re unmutes the entered member.</td>
+          <td>?unmute [member/name]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>unpunish</td>
+          <td>You&#39;re removes the punished user&#39;s punish (if exists).</td>
+          <td>?unpunish [member/name]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>voice-mute</td>
+          <td>You&#39;re mutes in the voice chat the entered member.</td>
+          <td>?voice-mute [member/name] [&lt;reason&gt;]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>voice-unmute</td>
+          <td>You&#39;re unmutes in the voice chat the entered member.</td>
+          <td>?voice-unmute [member/name]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>warn</td>
+          <td>You&#39;re warns the entered member.</td>
+          <td>?warn [member/name] [&lt;reason&gt;]</td>
+          <td>3 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>warns</td>
+          <td>You&#39;re see the warns of the entered member.</td>
+          <td>?warns [member/name]</td>
+          <td>3 seconds</td>
+       </tr>
+        
+      </table>
+    </div>    
+  </div>
+
+  
+  <div id="Fun" class="sex">
+    <div class="jumbotron" style="background-color:transparent" align="center">
+      <h1 class="display-5 title text-white">Fun Commands</h1>
+      <br>
+      <table id="Fun" class="text-white">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Usage</th>
+          <th>Cooldown</th>
+        </tr>
+      
+        
+        <tr>
+          <td>captcha</td>
+          <td>Bot shows entered member&#39;s pp in captcha page.</td>
+          <td>?captcha [member/name]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>frame</td>
+          <td>You&#39;re adds selected frame to entered user&#39;s pp.</td>
+          <td>?frame [balance/bravery/brilliance/hypesquad/partner/botdeveloper] [member/name]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>pride</td>
+          <td>Bot adds pride flag to entered member&#39;s pp.</td>
+          <td>?pride [member/name]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>tweet</td>
+          <td>You&#39;re tweets a post (not real, only for fun).</td>
+          <td>?tweet [member/name] [text]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>youtube</td>
+          <td>You&#39;re comments a message on youtube (not real, only for fun).</td>
+          <td>?youtube [member/name] [text]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+      </table>
+    </div>    
+  </div>
+
+  
+  <div id="System" class="sex">
+    <div class="jumbotron" style="background-color:transparent" align="center">
+      <h1 class="display-5 title text-white">System Commands</h1>
+      <br>
+      <table id="System" class="text-white">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Usage</th>
+          <th>Cooldown</th>
+        </tr>
+      
+        
+        <tr>
+          <td>eval</td>
+          <td>Bot owner tries code.</td>
+          <td>?eval [code]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>test</td>
+          <td>test.</td>
+          <td>NOPE</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+      </table>
+    </div>    
+  </div>
+
+  
+  <div id="Giveaway System" class="sex">
+    <div class="jumbotron" style="background-color:transparent" align="center">
+      <h1 class="display-5 title text-white">Giveaway System Commands</h1>
+      <br>
+      <table id="Giveaway System" class="text-white">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Usage</th>
+          <th>Cooldown</th>
+        </tr>
+      
+        
+        <tr>
+          <td>giveaway-edit</td>
+          <td>You&#39;re edits the LAST GIVEAWAY on server.</td>
+          <td>?giveaway-edit [new time] [new winner count] [new prize]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>giveaway-end</td>
+          <td>You&#39;re ends a giveaway on server.</td>
+          <td>NOPE</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>giveaway-reroll</td>
+          <td>You&#39;re rerolls the giveaway of entered ID.</td>
+          <td>NOPE</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>giveaway-start</td>
+          <td>You&#39;re starts a giveaway on server.</td>
+          <td>?giveaway-start [time] [winner count] [prize]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>giveaways</td>
+          <td>You&#39;re see the available giveaways on server.</td>
+          <td>NOPE</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+      </table>
+    </div>    
+  </div>
+
+  
+  <div id="General" class="sex">
+    <div class="jumbotron" style="background-color:transparent" align="center">
+      <h1 class="display-5 title text-white">General Commands</h1>
+      <br>
+      <table id="General" class="text-white">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Usage</th>
+          <th>Cooldown</th>
+        </tr>
+      
+        
+        <tr>
+          <td>help</td>
+          <td>Shows all commands on bot.</td>
+          <td>?help [&lt;command name&gt;]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>invite</td>
+          <td>Gives bot&#39;s invite link.</td>
+          <td>NOPE</td>
+          <td>3 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>last-joined-members</td>
+          <td>Bot shows you last joined members in 7 days.</td>
+          <td>NOPE</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>muted-members</td>
+          <td>Shows muted members.</td>
+          <td>NOPE</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>punished-members</td>
+          <td>Shows punished members.</td>
+          <td>NOPE</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>server</td>
+          <td>You&#39;re see message server&#39;s info.</td>
+          <td>NOPE</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>settings</td>
+          <td>Shows settings for message server.</td>
+          <td>NOPE</td>
+          <td>3 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>bot-stats</td>
+          <td>Shows bot&#39;s stats.</td>
+          <td>NOPE</td>
+          <td>3 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>user</td>
+          <td>You&#39;re see your member info or entered member&#39;s info.</td>
+          <td>?user [&lt;member/name&gt;]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+      </table>
+    </div>    
+  </div>
+
+  
+  <div id="Invite System" class="sex">
+    <div class="jumbotron" style="background-color:transparent" align="center">
+      <h1 class="display-5 title text-white">Invite System Commands</h1>
+      <br>
+      <table id="Invite System" class="text-white">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Usage</th>
+          <th>Cooldown</th>
+        </tr>
+      
+        
+        <tr>
+          <td>leaderboard</td>
+          <td>Shows server&#39;s leaderboard in invite system.</td>
+          <td>NOPE</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+        
+        <tr>
+          <td>rank</td>
+          <td>Shows your rank in invite system.</td>
+          <td>?rank [&lt;member/name&gt;]</td>
+          <td>2.5 seconds</td>
+       </tr>
+        
+      </table>
+    </div>    
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cino.glitch.me/js/now-ui-kit.min.js"></script>
+<script src="https://cino.glitch.me/js/table.js"></script>
+<script src="https://cino.glitch.me/js/custom.js"></script>
+<script> 
+$(window).load(function() {
+$(document).ready(function () {
+
+  // preloader
+  $(window).load(function(){
+    $('#preloder #loader').delay(400).fadeOut(500);
+  })
+})
+</script>
+</body>
+</html>
+b
